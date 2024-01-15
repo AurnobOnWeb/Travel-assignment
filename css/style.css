@@ -1,67 +1,67 @@
-*{
+* {
   margin: 0;
   padding: 0px;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
-
-.btn-primary{
+.btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 10px 40px;
   color: white;
-  border:none;
+  border: none;
   border-radius: 8px;
-  background-color: #FF5400;
+  background-color: #ff5400;
   font-weight: 700;
   cursor: pointer;
 }
 /* Header */
-header{
-    max-width: 1440px;
-    margin: 0px  auto;
+header {
+  max-width: 1440px;
+  margin: 0px auto;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-nav{
+nav {
   display: flex;
 }
-nav >ul{
+nav > ul {
   display: flex;
   gap: 2rem;
 }
-nav li{
+nav li {
   list-style: none;
 }
-nav a{
+nav a {
   color: #424247;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 700;
 }
-.active{
-  color: #FF5400;
+.active {
+  color: #ff5400;
 }
 
-.hamburger{
+.hamburger {
   cursor: pointer;
   display: none;
   font-size: 1.4rem;
 }
 
 /* banner */
-.banner{
-  background:linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100% ) , url('../images/banner.png') no-repeat ;
+.banner {
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+    url("../images/banner.png") no-repeat;
   height: 500px;
   background-size: cover;
   border-radius: 1rem;
@@ -70,153 +70,121 @@ nav a{
   align-items: center;
   justify-content: center;
 }
-.banner-title{
-  color: #FFF;
+.banner-title {
+  color: #fff;
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 1.6rem;
 }
 
-.banner-description{
+.banner-description {
   color: #fff5f5;
   margin-bottom: 2rem;
   max-width: 676px;
   text-align: center;
-
 }
 
-.search-travel{
+.search-travel {
   display: flex;
   gap: 1.6rem;
   padding: 16px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.3);
 }
-select{
+select {
   color: #13131880;
   width: 200px;
   height: 48px;
   padding: 0.8rem;
   border-radius: 8px;
-  background: #FFF;
+  background: #fff;
 }
 
 /* main */
-main{
+main {
   max-width: 1440px;
-  margin: 0px  auto;
+  margin: 0px auto;
 }
 
 /* popular Section */
-.popular-section{
+.popular-section {
   margin: 100px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 550px;
-  
 }
-.popular-title{
+.popular-title {
   color: #131318;
   font-size: 2.4rem;
   font-weight: 800;
 }
 
-.popular-image{
-  width: 540px;
-  height: 500px;
+.popular-image {
+  max-width: 540px;
+  max-height: 500px;
 }
-.popular-content > ul >li  ,p {
+.popular-content > ul > li,
+p {
   margin: 24px 0px;
   max-width: 600px;
 
-  color: rgba(19, 19, 24, 0.70);
+  color: rgba(19, 19, 24, 0.7);
 }
 
-.popular-description{
+.popular-description {
   margin-bottom: 32px;
 }
-.popular-content > ul{
+.popular-content > ul {
   margin-left: 40px;
 }
 /* Travel Destination*/
-.destination-image{
+.destination-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.destination-section-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+.destination-section-description {
+  max-width: 600px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+}
+
+.destination-image {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
-.row{
+.row {
   display: flex;
   gap: 24px;
- 
 }
-
-
-
-
+.img1 {
+  width: 710px;
+}
+.img2 {
+  width: 715px;
+}
 .img-container {
-  
   position: relative;
 }
-.img-container>img{
-  width: 100%;
+.img-container > img {
   height: 300px;
-  
 }
 
-.img-center-conten {
+.img-center-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 18px;
   color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:576px) {
-  header{
-    margin: 0px 20px;
-  }
-  nav >ul{
-    display: none;
-  }
-  .hamburger{
-    display: block;
-  }
-  .banner-title{
-    font-size: 2rem;
-  }
- .banner-description{
-  font-size: 0.8rem;
-   margin: 0 30px;
- }
- .search-travel{
-  margin-top: 2rem;
-  flex-direction: column;
-  align-items: center;
- }
- main{
-    margin: 0px 20px;
- }
- 
- .popular-section{
-  margin: 40px 0px;
-  flex-direction: column;
-  gap: 40px;
- }
- .popular-image{
-  width: 100%;
- }
 }
