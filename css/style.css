@@ -3,3 +3,220 @@
   padding: 0px;
   font-family: 'Mulish', sans-serif;
 }
+
+
+.btn-primary{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 40px;
+  color: white;
+  border:none;
+  border-radius: 8px;
+  background-color: #FF5400;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* Header */
+header{
+    max-width: 1440px;
+    margin: 0px  auto;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav{
+  display: flex;
+}
+nav >ul{
+  display: flex;
+  gap: 2rem;
+}
+nav li{
+  list-style: none;
+}
+nav a{
+  color: #424247;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.active{
+  color: #FF5400;
+}
+
+.hamburger{
+  cursor: pointer;
+  display: none;
+  font-size: 1.4rem;
+}
+
+/* banner */
+.banner{
+  background:linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100% ) , url('../images/banner.png') no-repeat ;
+  height: 500px;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-title{
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
+}
+
+.banner-description{
+  color: #fff5f5;
+  margin-bottom: 2rem;
+  max-width: 676px;
+  text-align: center;
+
+}
+
+.search-travel{
+  display: flex;
+  gap: 1.6rem;
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.30);
+}
+select{
+  color: #13131880;
+  width: 200px;
+  height: 48px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background: #FFF;
+}
+
+/* main */
+main{
+  max-width: 1440px;
+  margin: 0px  auto;
+}
+
+/* popular Section */
+.popular-section{
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 550px;
+  
+}
+.popular-title{
+  color: #131318;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.popular-image{
+  width: 540px;
+  height: 500px;
+}
+.popular-content > ul >li  ,p {
+  margin: 24px 0px;
+  max-width: 600px;
+
+  color: rgba(19, 19, 24, 0.70);
+}
+
+.popular-description{
+  margin-bottom: 32px;
+}
+.popular-content > ul{
+  margin-left: 40px;
+}
+/* Travel Destination*/
+.destination-image{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  gap: 24px;
+ 
+}
+
+
+
+
+.img-container {
+  
+  position: relative;
+}
+.img-container>img{
+  width: 100%;
+  height: 300px;
+  
+}
+
+.img-center-conten {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+  header{
+    margin: 0px 20px;
+  }
+  nav >ul{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .banner-title{
+    font-size: 2rem;
+  }
+ .banner-description{
+  font-size: 0.8rem;
+   margin: 0 30px;
+ }
+ .search-travel{
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+ }
+ main{
+    margin: 0px 20px;
+ }
+ 
+ .popular-section{
+  margin: 40px 0px;
+  flex-direction: column;
+  gap: 40px;
+ }
+ .popular-image{
+  width: 100%;
+ }
+}
