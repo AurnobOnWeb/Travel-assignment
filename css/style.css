@@ -3,7 +3,10 @@
   padding: 0px;
   font-family: "Mulish", sans-serif;
 }
-
+.headline{
+  color: #ff5400;
+  font-weight: 700;
+}
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -25,7 +28,7 @@
   text-align: center;
 }
 .section-description {
-  max-width: 600px;
+  max-width: 900px;
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
 }
@@ -141,7 +144,7 @@ section {
 .popular-content > ul > li,
 p {
   margin: 24px 0px;
-  max-width: 600px;
+  max-width: 800px;
 
   color: rgba(19, 19, 24, 0.7);
 }
@@ -188,9 +191,34 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 18px;
+  font-size: 1.5rem;
+  font-weight: 800;
   color: white;
 }
+/*  Extra testimonial section*/
+.feedback-content{
+  margin: 50px 0px;
+  display: flex;
+}
+
+.group_tour{
+  width: 50%;
+  border-radius: 16px;
+  height: 500px;
+}
+.testimonial-content
+{
+  width: 50%;
+  height: 500px;
+	transform: scale(0.9);
+	display: grid;
+  margin-left: 100px;
+	grid-gap: 1.5rem;
+	grid-template-rows: repeat(2,1fr);
+	grid-template-columns: repeat(4,1fr);
+}
+
+
 
 /* why-us section */
 .section-header {
@@ -305,7 +333,7 @@ p {
 iframe{
   border-radius: 16px;
   width: 700px;
-  height: 450px;
+  height: 350px;
 }
 
 .best-place-content{
@@ -400,7 +428,9 @@ footer {
   justify-content: center;
   flex-direction: column;
 }
-
+.footer-description{
+  text-align: center;
+}
 .footer-icon {
   display: flex;
   gap: 24px;
@@ -444,7 +474,8 @@ footer {
     gap: 40px;
   }
   .popular-image,
-  .newsletter-image-container {
+  .newsletter-image-container,
+  .group_tour {
     width: 100%;
   }
   .destination-section-title {
@@ -457,7 +488,7 @@ footer {
   .img-container > img {
     width: 100%;
   }
-  .chose-us-content1 , .best-place{
+  .chose-us-content1 , .best-place  {
     flex-direction: column;
     width: 100%;
   }
@@ -482,4 +513,5 @@ footer {
   .offer-card{
     margin-top: 50%;
   }
+
 }
