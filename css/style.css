@@ -16,6 +16,17 @@
   font-weight: 700;
   cursor: pointer;
 }
+.section-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+.section-description {
+  max-width: 600px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+}
 /* Header */
 header {
   max-width: 1440px;
@@ -105,10 +116,12 @@ main {
   max-width: 1440px;
   margin: 0px auto;
 }
-
+/* section */
+section {
+  margin: 50px 0px;
+}
 /* popular Section */
 .popular-section {
-  margin: 100px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -138,23 +151,11 @@ p {
   margin-left: 40px;
 }
 /* Travel Destination*/
-.destination-section{
+.destination-section {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.destination-section-title {
-  color: #131318;
-  font-size: 40px;
-  font-weight: 800;
-  text-align: center;
-}
-.destination-section-description {
-  max-width: 600px;
-  color: rgba(19, 19, 24, 0.7);
-  text-align: center;
-}
-
 .destination-image {
   display: flex;
   gap: 24px;
@@ -187,4 +188,226 @@ p {
   transform: translate(-50%, -50%);
   font-size: 18px;
   color: white;
+}
+
+/* why-us section */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chose-us-content1 {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.chose-us-content2 {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  padding: 32px;
+  width: 50%;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.bg-blue {
+  background: rgba(41, 206, 246, 0.05);
+}
+.card > img {
+  width: 64px;
+  height: 64px;
+}
+.card-title {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 32px;
+  margin-bottom: 1rem;
+}
+.card-description {
+  color: #5a5a5d;
+}
+.offer-row {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  border-radius: 16px;
+  background: lightgray 50% url("../images/offer-row1.png") no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding: 50px;
+}
+
+.offer-card {
+  max-width: 580px;
+  height: 350px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  padding: 50px;
+}
+.offer-details {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.orange {
+  color: #ff5400;
+}
+.offer-details > h3 {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+}
+.offer-title {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* newsletter */
+.news-letter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.news-letter-content {
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 40px;
+  height: 340px;
+  max-width: 40%;
+}
+.newsletter-image-container {
+  width: 60%;
+  position: relative;
+}
+.background {
+  width: 100%;
+  height: 420px;
+}
+.discount {
+  position: absolute;
+  bottom: 8px;
+  right: 2px;
+  width: 200px;
+  rotate: -30deg;
+}
+.news-letter-heading {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.news-letter-description {
+  width: 330px;
+  color: #5a5a5d;
+  margin-bottom: 16px;
+}
+.horizontal-line {
+  width: 100%;
+  border: 1px solid rgba(19, 19, 24, 0.1);
+}
+
+.input-filed {
+  width: 100%;
+  height: 48px;
+  padding: 5px 0px 0px 10px;
+  color: rgba(19, 19, 24, 0.3);
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border: none;
+  margin: 16px 0px;
+  outline: none;
+}
+.subscribe {
+  width: 100%;
+  height: 52px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    margin: 0px 20px;
+  }
+  nav > ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-description {
+    font-size: 0.8rem;
+    margin: 0 30px;
+  }
+  .search-travel {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    margin: 0px 20px;
+  }
+
+  .popular-section {
+    margin: 40px 0px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .popular-image,
+  .newsletter-image-container {
+    width: 100%;
+  }
+  .destination-section-title {
+    font-size: 2rem;
+  }
+  .row,
+  .news-letter {
+    flex-direction: column;
+  }
+  .img-container > img {
+    width: 100%;
+  }
+  .chose-us-content1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    width: auto;
+  }
+  .news-letter {
+    margin: 0px 20px;
+  }
+  .news-letter-content {
+    max-width: 100%;
+  }
 }
