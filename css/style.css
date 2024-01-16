@@ -235,17 +235,20 @@ p {
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 100%;
+  max-width: 100%;
   border-radius: 16px;
   background: lightgray 50% url("../images/offer-row1.png") no-repeat;
   background-size: cover;
-  height: 450px;
+  max-height: 500px;
   padding: 50px;
+  margin-bottom: 24px;
 }
-
+.offer-two{
+  justify-content: start;
+}
 .offer-card {
   max-width: 580px;
-  height: 350px;
+  max-height: 350px;
   border-radius: 16px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.8);
@@ -261,6 +264,10 @@ p {
 .orange {
   color: #ff5400;
 }
+.offer-description{
+  color: #5A5A5D;
+  width: 90%;
+}
 .offer-details > h3 {
   color: #5a5a5d;
   font-size: 16px;
@@ -270,6 +277,21 @@ p {
   color: #131318;
   font-size: 1.5rem;
   font-weight: 800;
+}
+
+.price{
+  font-size: 1.3rem;
+  font-weight: 800;
+
+  margin: 24px 0px;
+}
+.all-package-btn{
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+.btn-size-package{
+  height: 52px;
 }
 
 
