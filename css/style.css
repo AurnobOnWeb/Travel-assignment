@@ -7,6 +7,7 @@
 .btn-primary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 10px 40px;
   color: white;
@@ -63,7 +64,6 @@ nav a {
 .active {
   color: #ff5400;
 }
-
 .hamburger {
   cursor: pointer;
   display: none;
@@ -72,7 +72,7 @@ nav a {
 
 /* banner */
 .banner {
-  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+  background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
     url("../images/banner.png") no-repeat;
   height: 500px;
   background-size: cover;
@@ -97,6 +97,7 @@ nav a {
 }
 
 .search-travel {
+  width: 60%;
   display: flex;
   gap: 1.6rem;
   padding: 16px;
@@ -105,8 +106,8 @@ nav a {
 }
 select {
   color: #13131880;
-  width: 200px;
-  height: 48px;
+  width: 100%;
+  height: 100%;
   padding: 0.8rem;
   border-radius: 8px;
   background: #fff;
@@ -240,7 +241,7 @@ p {
   border-radius: 16px;
   background: lightgray 50% url("../images/offer-row1.png") no-repeat;
   background-size: cover;
-  max-height: 500px;
+  height: 400px;
   padding: 50px;
   margin-bottom: 24px;
 }
@@ -301,11 +302,12 @@ p {
   justify-content: space-between;
   gap: 40px;
 }
-
-.i-frame {
+iframe{
+  border-radius: 16px;
   width: 700px;
   height: 450px;
 }
+
 .best-place-content{
   max-height: 450px;
 }
@@ -408,6 +410,8 @@ footer {
 .footer-icon a {
   color: #424247;
 }
+
+
 @media screen and (max-width: 576px) {
   header {
     margin: 0px 20px;
@@ -469,7 +473,13 @@ footer {
   .footer {
     padding: 30px;
   }
-  .i-frame{
+  iframe{
     width: 100%;
+  }
+  .offer-row{
+    height: 550px;
+  }
+  .offer-card{
+    margin-top: 50%;
   }
 }
