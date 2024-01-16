@@ -4,7 +4,7 @@
   font-family: "Mulish", sans-serif;
 }
 .headline {
-  color: #ff5400;
+  color: #1559ec;
   font-weight: 700;
 }
 .btn-primary {
@@ -16,7 +16,7 @@
   color: white;
   border: none;
   border-radius: 8px;
-  background-color: #ff5400;
+  background-color: #1559ec;
   font-weight: 700;
   cursor: pointer;
   height: 52px;
@@ -65,7 +65,7 @@ nav a {
   font-weight: 700;
 }
 .active {
-  color: #ff5400;
+  color: #1559ec;
 }
 .hamburger {
   cursor: pointer;
@@ -302,7 +302,7 @@ p {
 }
 .offer-card {
   max-width: 580px;
-  max-height: 350px;
+  max-height: 4000px;
   border-radius: 16px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.8);
@@ -316,7 +316,7 @@ p {
   margin-bottom: 24px;
 }
 .orange {
-  color: #ff5400;
+  color: #1559ec;
 }
 .offer-description {
   color: #5a5a5d;
@@ -385,7 +385,7 @@ iframe {
 }
 .news-letter-content {
   border-radius: 16px;
-  border: 1px solid #ff5400;
+  border: 1px solid #1559ec;
   padding: 40px;
   height: 340px;
   max-width: 40%;
@@ -536,6 +536,6 @@ footer {
     height: 550px;
   }
   .offer-card {
-    margin-top: 50%;
+    margin-top: 30%;
   }
 }
